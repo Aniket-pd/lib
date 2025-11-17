@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portal-sdk"
+version = "0.1.0"
+description = "Python client for the Portal WebSocket server"
+authors = [
+  { name = "Portal Technologies" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "websockets>=12,<13"
+]
+
+[project.urls]
+Homepage = "https://github.com/PortalTechnologiesInc/lib"
+Source = "https://github.com/PortalTechnologiesInc/lib/tree/main/rest/clients/python"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["portal_sdk*"]
